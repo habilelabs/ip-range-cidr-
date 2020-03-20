@@ -1,0 +1,34 @@
+{
+  "name": "ip-range-cidr-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "browserify ./iprange-cidr.js > ./dist/iprange-cidr.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test && npm run build"
+    }
+  },
+  "dependencies": {
+    "ip": "^1.1.5",
+    "husky": "^4.2.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "chai": "^3.5.0",
+    "mocha": "^6.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/habilelabs/ip-range-cidr-.git"
+  },
+  "author": "Anil Karwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/habilelabs/ip-range-cidr-/issues"
+  },
+  "homepage": "https://github.com/habilelabs/ip-range-cidr-#readme"
+}

@@ -1,0 +1,1 @@
+window.IP4CIDR = require('./index');
